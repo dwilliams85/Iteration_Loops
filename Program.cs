@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Iteration_Loops
 {
@@ -12,7 +12,12 @@ namespace Iteration_Loops
             {
                 string input = Console.ReadLine();
                 int value_of_input = int.Parse(input);
-                Console.WriteLine("You Have" +" "+ value_of_input.ToString() + "years of experience");
+
+                for (int i = 1; i <= value_of_input; i++)
+                {
+                    Console.WriteLine("You Have" + " " + i.ToString() +" "+ "years of experience.");
+                }
+
                 Console.WriteLine("Press any key to exit the program ...");
                 Console.ReadKey(true);
             }
